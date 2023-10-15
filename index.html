@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - William Roux</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+      .section {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        padding: 40px;
+        margin: 20px auto;
+        border: 2px solid #000;
+        border-radius: 10px; 
+        margin-top: 80px;
+        max-width: 75%;
+        max-height: 75%;
+      }
+      .section h2 {
+        font-size: 1.5em;
+      }
+      .navbar {
+        background-color: darkgoldenrod;
+      }
+
+      #contact_panel {
+        padding: 5%;
+      }
+
+      .timeline {
+        list-style: none;
+        padding: 0;
+    }
+
+    .timeline-item {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .timeline-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -15px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: darkgoldenrod; 
+    }
+
+    .timeline-content {
+        margin-left: 30px;
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .timeline-content h4 {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .timeline-date {
+        font-weight: bold;
+        color: #007bff; 
+        margin-bottom: 10px;
+    }
+
+    .timeline-content p {
+        font-size: 16px;
+        color: #666;
+    }
+
+    h1 {
+        font-size: 36px;
+        color: darkgoldenrod;
+        margin-bottom: 30px;
+    }
+        .loisirs-images img {
+            width: 100px; 
+            height: 100px; 
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 5px; 
+        }
+
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><strong><i class="fa-solid fa-house"></i> William Roux</strong></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#informations-personnelles">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#competences">Compétences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#diplome">Diplômes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Expérience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#loisirs">Loisirs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reseau">Réseaux</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="section" id="informations-personnelles">
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card bg-transparent" style="max-width: 50vh;"> <!-- Ajoutez la classe w-50 ou ajustez max-width selon vos besoins -->
+                        <img src="WilliamRoux.jpg" class="card-img-top img-fluid rounded-circle" />
+                        <div class="card-body">
+                            <h1 class="card-title text-white"><strong>William Roux</strong></h1>
+                            <p class="card-text text-white">
+                              <i class="fa-solid fa-key"></i> <strong>L'intelligence naturelle au service de l'intelligence artificielle </strong></i>
+                            </p>
+                            <a href="William_Roux_CV.pdf" class="btn btn-primary"><i class="fa-solid fa-arrow-down"></i>  Découvrez mon CV <i class="fa-solid fa-file"></i>  <i class="fa-solid fa-arrow-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="competences">
+      <h1 class="mb-4">
+          <strong><i class="fas fa-unlock"></i> Compétences</strong>
+      </h1>
+      <div class="row mb-4">
+        <div class="col-md-6 mb-4 white-text">
+          <a href="#maths" data-toggle="collapse" class="text-white">
+            <i class="fa-solid fa-square-root-variable"></i> 
+               Mathématiques et statistiques <div class="bg-secondary"><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle-half-stroke"></i></div>
+              <i class="fas fa-angle-down"></i> - <i class="fa-solid fa-circle-plus"></i> - <i class="fas fa-angle-down"></i>
+          </a>
+          <div id="maths" class="collapse">
+            <br>
+            <div class="bg-dark">
+            <i class="fa-solid fa-arrow-right"></i> Grâce à mes études approfondies en mathématiques lors de ma formation en classe préparatoire, je possède une solide base en mathématiques et en statistiques.</div> <br> <br>
+            <div class="bg-dark">
+            <i class="fa-solid fa-arrow-right"></i> Ma capacité à analyser des données complexes, à résoudre des problèmes mathématiques et à appliquer des concepts statistiques me permet de prendre des décisions éclairées et de contribuer de manière significative à la résolution de problèmes analytiques dans divers domaines.
+          </div>
+            
+          </div>
+      </div>
+      <div class="col-md-6 mb-4 white-text">
+        <a href="#crea" data-toggle="collapse" class="text-white">
+          <i class="fa-solid fa-laptop-code"></i>
+            Créativité et Résolution de Problèmes <div class="bg-secondary"><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle-half-stroke"></i><i class="fa-regular fa-circle"></i></div>
+            <i class="fas fa-angle-down"></i> - <i class="fa-solid fa-circle-plus"></i> - <i class="fas fa-angle-down"></i>
+        </a>
+        <div id="crea" class="collapse">
+          <br>
+          <div class="bg-dark">
+          <i class="fa-solid fa-arrow-right"></i> Doté d'une forte créativité et d'une aptitude à résoudre des problèmes, je suis en mesure d'aborder les défis professionnels avec une perspective innovante.</div> <br> <br>
+          <div class="bg-dark">
+          <i class="fa-solid fa-arrow-right"></i> J'excelle dans la recherche de solutions originales et efficaces, ce qui me permet de contribuer de manière significative à la résolution de problèmes dans divers domaines.</div>
+        </div></div>
+    </div>
+      </div>
+      <div class="row mb-4">
+          <div class="col-md-6 mb-4">
+              <a href="#langage-programmation" data-toggle="collapse" class="text-white">
+                  <i class="fas fa-code"></i>
+                  Langage de Programmation <div class="bg-secondary"><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle-half-stroke"></i><i class="fa-regular fa-circle"></i></div>
+                  <i class="fas fa-angle-down"></i> - <i class="fa-solid fa-circle-plus"></i> - <i class="fas fa-angle-down"></i>
+              </a>
+              <div id="langage-programmation" class="collapse">
+                  <div class="col-md-12 bg-dark">
+                    <div class="mb-4"> <br><i class="fa-solid fa-arrow-right"></i> J'ai pu travailler sur des Frameworks Web tel que Spring ou ReactJS</div>
+                      <div class="row mb-4 bg-secondary">
+                          <div class="col-md-6 mb-4">
+                            <br>
+                              <i class="fab fa-html5"></i>
+                              HTML <i class="fa-solid fa-temperature-full"></i>
+                          </div>
+                          <div class="col-md-6">
+                            <br>
+                              <i class="fab fa-css3"></i>
+                              CSS <i class="fa-solid fa-temperature-full"></i>
+                          </div>
+                      </div>
+                      <div class="row mb-4 bg-secondary">
+                          <div class="col-md-6 mb-4">
+                            <br>
+                              <i class="fab fa-php"></i>
+                              
+                              PHP <i class="fa-solid fa-temperature-three-quarters"></i>
+
+                          </div>
+                          <div class="col-md-6">
+                            <br>
+                              <i class="fab fa-js"></i>
+                              JS <i class="fa-solid fa-temperature-three-quarters"></i>
+                          </div>
+                      </div>
+                      <div class="row mb-4 bg-secondary">
+                          <div class="col-md-6 mb-4">
+                            <br>
+                              <i class="fab fa-python"></i>
+                              Python <i class="fa-solid fa-temperature-full"></i>
+                          </div>
+                          <div class="col-md-6">
+                            <br>
+                            <i class="fa-brands fa-java"></i>
+                              Java <i class="fa-solid fa-temperature-half"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 mb-4 white-text">
+            <a href="#ethique" data-toggle="collapse" class="text-white">
+              <i class="fa-regular fa-handshake"></i>
+                Ethique et Responsabilité <div class="bg-secondary"><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle-half-stroke"></i></div>
+                <i class="fas fa-angle-down"></i> - <i class="fa-solid fa-circle-plus"></i> - <i class="fas fa-angle-down"></i>
+            </a>
+            <div id="ethique" class="collapse">
+              <br>
+              <div class="bg-dark">
+              <i class="fa-solid fa-arrow-right"></i> Je considère l'éthique comme une pierre angulaire de ma carrière, veillant à ce que chaque action que j'entreprenne soit guidée par des valeurs de responsabilité et d'intégrité.
+            </div>
+              <br> <br>
+              <div class="bg-dark">
+              <i class="fa-solid fa-arrow-right"></i> Bien conscient de l'importance de l'éthique professionnelle, je m'engage à faire preuve d'un comportement exemplaire, créant ainsi un environnement de confiance et de respect au sein de mon équipe et de mon organisation.
+            </div>
+              
+            </div>
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md-12 mb-4 white-text">
+          <a href="#com" data-toggle="collapse" class="text-white">
+            <i class="fas fa-comment"></i> 
+            Communication efficace et collaboration interculturelle <div class="bg-secondary"><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle-half-stroke"></i></div>
+              <i class="fas fa-angle-down"></i> - <i class="fa-solid fa-circle-plus"></i> - <i class="fas fa-angle-down"></i>
+          </a>
+          <div id="com" class="collapse">
+            <br>
+            <div class="bg-dark">
+            <i class="fa-solid fa-arrow-right"></i> Fortement axé sur la communication et possédant une aisance en anglais, je suis capable de faciliter des échanges transparents au sein d'équipes multiculturelles. </div><br> <br>
+            <div class="bg-dark">
+            <i class="fa-solid fa-arrow-right"></i> Mon aptitude à comprendre et à m'exprimer clairement en anglais m'a permis de travailler avec succès avec des collègues et des clients internationaux, favorisant ainsi une collaboration harmonieuse et productive.
+          </div>
+            
+          </div>
+      </div>
+
+    
+  </section>
+  
+    <section class="section" id="diplome">
+      <h1>
+        <strong><i class="fa-solid fa-scroll"></i> Diplômes</strong>
+      </h1>
+      <div class="row">
+        <div class="col-md-12">
+          <a
+            href="#baccalaureat-details"
+            class="btn btn-link text-white"
+            data-toggle="collapse"
+            >Bac S - Lycée Paul Mélizan - 55 Rte des Camoins, 13011 Marseille <i class="fas fa-angle-down"></i>
+          </a>
+          <div id="baccalaureat-details" class="collapse">
+            <p>
+              Obtention du Baccalauréat Général Scientifique Option SVT
+              spécialité Physique / Chimie. Mention Très Bien !
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <a
+            href="#cpge-details"
+            class="btn btn-link text-white"
+            data-toggle="collapse"
+            >CPGE - Lycée Jean Perrin - 74 Rue Verdillon, 13010 Marseille <i class="fas fa-angle-down"></i></a
+          >
+          <div id="cpge-details" class="collapse">
+            <p>PCSI -> PSI* -> 5/2 PSI* / 3 ans de CPGE au Lycée Jean Perrin</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <a
+            href="#bafa-details"
+            class="btn btn-link text-white"
+            data-toggle="collapse"
+            >BAFA : Brevet d'aptitude aux fonctions d'animateur en ACM<i class="fas fa-angle-down"></i></a
+          >
+          <div id="bafa-details" class="collapse">
+            <p>Avec le BAFA, je peux animer, inspirer et vivre des aventures incroyables !</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <h1 class="mb-4"><strong><i class="fa-solid fa-folder-open"></i> Portfolio</strong></h1>
+      <div class="row mb-4">
+        <div class="col-md-6 mb-4">
+          <h2>- Projet 1 -</h2>
+          <img src="en-construction.jpg" class="img-fluid" />
+        </div>
+        <div class="col-md-6">
+          <h2>- Projet 2 -</h2>
+          <img src="en-construction.jpg" class="img-fluid" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h2>- Projet 3 -</h2>
+          <img src="en-construction.jpg" class="img-fluid" />
+        </div>
+        <div class="col-md-6">
+          <h2>- Projet 4 -</h2>
+          <img src="en-construction.jpg" class="img-fluid" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+    <div class="container">
+        <h1 class="text-center mb-4"><strong><i class="fa-solid fa-box-archive"></i> Expérience</strong></h1>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h4 class="mb-2">Stage à Vista Voyages</h4>
+                    <p class="timeline-date">Fevrier 2014 - Mars 2024</p>
+                    <p>Découverte du monde de l'entreprise</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h4 class="mb-2">Stage pour l'obtention du BAFA</h4>
+                    <p class="timeline-date">Juin 2019 - Juillet 2019</p>
+                    <p>Animation d'activités pendant 2 semaines pour un groupe d'adolescents de 13 à 15 ans. Une expérience qui enrichit à la fois professionnellement et personnellement.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h4 class="mb-2">Stage au Centre de Tri de LaPoste</h4>
+                    <p class="timeline-date">Fevrier 2015 - Mars 2015</p>
+                    <p>J'ai acquis une précieuse expérience en optimisant les flux logistiques et en développant des compétences essentielles dans la gestion des envois postaux.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <section class="section" id="loisirs">
+    <h1 class="mb-4"><strong><i class="fa-solid fa-gamepad"></i> Loisirs</strong></h1>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <img
+                src="jeuvideo.jpg"
+                class="img-fluid rounded-circle"
+                data-toggle="tooltip"
+                data-title="Jeu vidéo - Description ici"
+                style="width: 200px; height: 200px;"
+            />
+        </div>
+        <div class="col-md-6 mb-4">
+            <img
+                src="music.jpg"
+                class="img-fluid rounded-circle"
+                data-toggle="tooltip"
+                data-title="Musique - Description ici"
+                style="width: 200px; height: 200px;"
+            />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <img
+                src="Pongiste.png"
+                class="img-fluid rounded-circle"
+                data-toggle="tooltip"
+                data-title="Ping-pong - Description ici"
+                style="width: 200px; height: 200px;"
+            />
+        </div>
+        <div class="col-md-6 mb-4">
+            <img
+                src="chess.jpg"
+                class="img-fluid rounded-circle"
+                data-toggle="tooltip"
+                data-title="Échecs - Description ici"
+                style="width: 200px; height: 200px;"
+            />
+        </div>
+    </div>
+</section>
+
+
+    <section class="section" id="reseau">
+      <h1 class="mb-4"><strong><i class="fa-brands fa-instagram"></i> Réseaux</strong></h1>
+      <div class="row">
+        <div class="col-md-6">
+          <a href="https://github.com/williamRX" style="font-size: 24px"
+            ><i class="fab fa-github" style="font-size: 24px"></i> Mon GitHub</a
+          >
+        </div>
+        <div class="col-md-6">
+          <a
+            href="https://www.linkedin.com/in/william-roux-4535a9261/"
+            style="font-size: 24px"
+            ><i class="fab fa-linkedin" style="font-size: 24px"></i> Mon
+            LinkedIn</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h1 class="text-center mb-4"><strong><i class="fa-solid fa-envelope"></i> Contact</strong></h1>
+      <div class="bg-primary" id="contact_panel">
+        <h3 class="mb-4"><strong>Me contacter</strong></h3>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="row mb-3">
+                <div class="col">
+                  <label for="nom" class="form-label">Nom</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nom"
+                    placeholder="Votre nom"
+                    required
+                  />
+                </div>
+                <div class="col">
+                  <label for="prenom" class="form-label">Prénom</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="prenom"
+                    placeholder="Votre prénom"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="exemple@domaine.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="question" class="form-label">Question</label>
+                <textarea
+                  class="form-control"
+                  id="question"
+                  rows="4"
+                  placeholder="Posez votre question ici"
+                  required
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-dark"><i class="fa-solid fa-arrow-right"></i> Envoyer <i class="fa-solid fa-arrow-left"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <footer>
+
+  </footer>
+  </body>
+</html>
